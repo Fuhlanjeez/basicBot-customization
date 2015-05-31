@@ -1,8 +1,4 @@
-(function () {
-    //Link location of your fork so you don't have to modify so many things.
-    var fork = "Yemasthui";
-		
-    //Define our function responsible for extending the bot.
+ //Define our function responsible for extending the bot.
     function extend() {
         //If the bot hasn't been loaded properly, try again in 1 second(s).
         if (!window.bot) {
@@ -18,7 +14,6 @@
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
-
          bot.commands.commandCommand = {
          command: 'cmd',
          rank: 'user/bouncer/mod/manager',
@@ -31,7 +26,6 @@
          }
          }
          }
-
          */
 
         bot.commands.baconCommand = {
@@ -107,8 +101,8 @@
         songstats: true,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/Fuhlanjeez/basicBot-customization-1/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/Fuhlanjeez/basicBot-customization-1/master/blacklists/ExampleOPlist.json"
+            NSFW: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+            OP: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/ExampleOPlist.json"
         }
     }));
 
